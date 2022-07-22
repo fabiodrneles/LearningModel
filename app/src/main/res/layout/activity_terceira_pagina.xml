@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerceiraPagina">
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_anterior3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_menu"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fabio D'arcy"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_anterior3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in massa tristique, ornare ligula in, lobortis purus. Quisque mollis tempor posuere. Nullam pellentesque est sapien, a tristique ex imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum, massa sit amet tempor aliquet, ipsum lectus sagittis dui, vitae venenatis dui risus sed odio. Proin ac lorem eget enim convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in massa tristique, ornare ligula in, lobortis purus. Quisque mollis tempor posuere. Nullam pellentesque est sapien, a tristique ex imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum.imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum.imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum.imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum. ntum.imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum. ntum.imperdiet viverra. Sed ut aliquet orci, vitae tincidunt arcu. Morbi condimentum. ntum.imperdiet viverra."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/celular" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="496dp"
+        android:text="Título do texto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
